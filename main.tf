@@ -13,6 +13,9 @@ resource "aws_instance" "new_inst" {
         instance_type = "t2.micro"
 	tags = {
 		Name = "tf_new_inst"
+		Env =  "new_dev_inst"
+
+
 	}
 }
 
